@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-upper {
+    padding: 2vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(7, 7, 33);
+    color: white;
+}
+
+.heading {
+    font-size: 3rem;
+    padding: 1rem 8rem 1rem 3.5rem;
+}
+
+.array-inputs {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+}
+
+.ranges {
+    display: flex;
+    gap: 1rem;
+}
+
+.array-inputs button {
+    font-size: 1rem;
+    padding: 0.25rem;
+    background-color: transparent;
+    color: white;
+    border: 0px;
+}
+
+.sorts {
+    padding: 0.5rem 3.5rem 0 3.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 55%;
+    gap: 3rem;
+}
+
+.sorts button {
+    font-size: 1rem;
+    padding: 0.25rem;
+    background-color: transparent;
+    color: white;
+    border: 0px;
+}
