@@ -5,7 +5,7 @@
 }
 
 .nav-upper {
-    padding: 2vh;
+    padding: 1vh;
     display: flex;
     justify-content: space-around;
     background-color: #032B43;
@@ -32,7 +32,7 @@
 
 .array-inputs button {
     font-size: 1rem;
-    padding: 0.25rem;
+    padding: 0.5rem;
     background-color: transparent;
     color: white;
     border: 0px;
@@ -49,15 +49,20 @@
 
 .sorts button {
     font-size: 1rem;
-    padding: 0.25rem;
+    padding: 0.5rem;
     background-color: transparent;
     color: white;
     font-weight: bolder;
     border: 0px;
 }
 
-#arr_size:hover , #arr_speed:hover, button:hover {
+#arr_size:hover , #arr_speed:hover {
     cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 1px white solid;
 }
 
 .big-cont {
