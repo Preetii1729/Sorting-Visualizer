@@ -36,6 +36,7 @@
     background-color: transparent;
     color: white;
     border: 0px;
+    font-weight: bolder;
 }
 
 .sorts {
@@ -51,5 +52,10 @@
     padding: 0.25rem;
     background-color: transparent;
     color: white;
+    font-weight: bolder;
     border: 0px;
+}
+
+#arr_size:hover , #arr_speed:hover, button:hover {
+    cursor: pointer;
 }
