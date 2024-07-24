@@ -12,6 +12,7 @@ var cont=document.getElementById("visualizer");
 generate_array();
 
 inp_gen.addEventListener("click", generate_array);
+inp_as.addEventListener("input",generate_array);
 
 function generate_array()
 {
@@ -26,8 +27,7 @@ function generate_array()
         divs[i]=document.createElement("div");
         cont.appendChild(divs[i]);
         margin_size=0.1;
-        // divs[i].class+="bars";
-        divs[i].style=" margin:0% " + margin_size + "%; background-color:#6F9596; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i])*3 + "%;";
+        divs[i].style=" margin:0% " + margin_size + "%; background-color:#EFC11A; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i])*2 + "%;";
     }
 }
 
