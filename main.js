@@ -28,5 +28,7 @@ function generate_array()
     }
 }
 
-butts_algos[1].addEventListener("click",Bubble());
+butts_algos[0].addEventListener('click', function() {
+    bubble();
+});
 
