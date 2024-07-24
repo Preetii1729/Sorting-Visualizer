@@ -1,5 +1,5 @@
 var inp_gen=document.getElementById("arr_generate");
-var inp_aspeed=document.getElementById("arr_speed");
+// var inp_speed=document.getElementById("arr_speed");
 var inp_as=document.getElementById('arr_size');
 var array_size=inp_as.value;
 
@@ -18,11 +18,8 @@ function generate_array()
 {
     array_size=inp_as.value;
     cont.innerHTML="";
-    console.log("Hello");
-    console.log(array_size);
     for(var i=0;i<array_size;i++)
     {
-        console.log("Hello");
         div_sizes[i]=Math.floor(Math.random() *0.5*(inp_as.max - inp_as.min) ) + 10;
         divs[i]=document.createElement("div");
         cont.appendChild(divs[i]);
