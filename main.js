@@ -28,3 +28,5 @@ function generate_array()
     }
 }
 
+butts_algos[1].addEventListener("click",Bubble());
+
