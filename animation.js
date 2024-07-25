@@ -9,7 +9,7 @@ function animation_speed()
     console.log(array_speed);
     switch(parseInt(array_speed)) //Convert string to int, as the value is a string
     {
-        case 1: speed=10;
+        case 1: speed=1;
                 break;
         case 2: speed=100;
                 break;
