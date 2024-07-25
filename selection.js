@@ -23,9 +23,16 @@ function selectionSort(n) {
         div_update(divs[i],div_sizes[i]*2, "#49697F");
         div_update(divs[min],div_sizes[min]*2, "#49697F");//Color updat - gray blue
         if(min!=i){
-            div_update(divs[min],div_sizes[min]*2, "#EFC11A");
+            div_update(divs[min],div_sizes[min]*2, "#EFC11A"); //original yellow
         }
         div_update(divs[i],div_sizes[i]*2, "#F95738");//Color update - tomato
     }
     div_update(divs[0],div_sizes[0]*2, "#F95738");//Color update - tomato
 }
+
+/*
+Elements before sage-brown/yellow are sorted i.e. it is the border between sorted and unsorted array.
+The elements that are being traversed to find the minimum are highlighted in orange/sandy-brown as they are traversed.
+The found minimum element is then swapped with the border element, and this is shown in gray blue.
+When the element has reached its final state it turns red, we can also say that the elements before border element are red.
+*/
