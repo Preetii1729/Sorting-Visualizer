@@ -1,5 +1,6 @@
 function bubble()
 {
+    console.log("bubble"+inp_speed.value);
     c_delay=0;
 
     for(var i=0;i<array_size-1;i++)

@@ -1,5 +1,4 @@
 var inp_gen=document.getElementById("arr_generate");
-// var inp_speed=document.getElementById("arr_speed");
 var inp_as=document.getElementById('arr_size');
 var array_size=inp_as.value;
 
@@ -30,9 +29,11 @@ function generate_array()
 }
 
 butts_algos[0].addEventListener('click', function() {
+    c_delay=0;
     bubble();
 });
 
 butts_algos[1].addEventListener('click', function(){
+    c_delay=0;
     merge();
 });

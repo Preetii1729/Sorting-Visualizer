@@ -6,25 +6,24 @@ inp_speed.addEventListener("input",animation_speed);
 function animation_speed()
 {
     var array_speed=inp_speed.value; 
-    console.log(array_speed);
     switch(parseInt(array_speed)) //Convert string to int, as the value is a string
     {
-        case 1: speed=5;
+        case 1: speed=15;
                 break;
         case 2: speed=100;
                 break;
-        case 3: speed=500;
+        case 3: speed=400;
                 break;
-        case 4: speed=2000;
+        case 4: speed=800;
                 break;
-        case 5: speed=5000;
+        case 5: speed=3000;
                 break;
     }
     c_delay=0;
-    delay_time=10000/(Math.floor(array_size/10)*speed);        //Decrease numerator to increase speed.
+    delay_time=10000/(speed);        //Decrease numerator to increase speed.
 }
 
-var delay_time=10000/(Math.floor(array_size/10)*speed);
+var delay_time=10000/(speed);
 var c_delay=0;          //Updated on every div change so that we can see the visualization.
 
 function div_update(cont,height,color)
