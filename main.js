@@ -25,6 +25,7 @@ function generate_array()
         cont.appendChild(divs[i]);
         margin_size=0.1;
         divs[i].style=" margin:0% " + margin_size + "%; background-color:#EFC11A; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i])*2 + "%;";
+        divs[i].innerHTML="<p>"+div_sizes[i]+"</p>";
     }
 }
 

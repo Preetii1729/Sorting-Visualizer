@@ -9,7 +9,7 @@ function animation_speed()
     console.log(array_speed);
     switch(parseInt(array_speed)) //Convert string to int, as the value is a string
     {
-        case 1: speed=1;
+        case 1: speed=5;
                 break;
         case 2: speed=100;
                 break;
@@ -31,6 +31,7 @@ function div_update(cont,height,color)
 {
         window.setTimeout(function(){
                 cont.style=" margin:0% " + margin_size + "%; width:" + (100/array_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
+                cont.innerHTML="<p>"+height/2+"</p>";
         },c_delay+=delay_time);
 }
 

@@ -4,6 +4,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 .nav-upper {
     padding: 1vh;
     display: flex;
@@ -84,3 +85,12 @@ button:hover {
     height: 100%;
 }
 
+
+#visualizer p {
+    font-weight: 600;
+    text-align: center;
+    color: #032B43;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
