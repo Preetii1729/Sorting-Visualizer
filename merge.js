@@ -20,33 +20,32 @@ function divide(low,high,mid){
     var arr=[]; 
     while (p<=mid && q<=high){
         if(div_sizes[p]<=div_sizes[q]){
-            // div_update(divs[p],div_sizes[p]*2, "#BCB57B");//Color update-Sandy brown
-            // div_update(divs[q],div_sizes[q]*2, "#BCB57B");//Color update
             arr[k++]=div_sizes[p++];
             div_update(divs[p-1],div_sizes[p-1]*2, "#EE964B");//Height update
         }
         else{
-            // div_update(divs[p],div_sizes[p]*2, "#BCB57B");//Color update-Sandy brown
-            // div_update(divs[q],div_sizes[q]*2, "#BCB57B");//Color update
             arr[k++]=div_sizes[q++];
             div_update(divs[q-1],div_sizes[q-1]*2, "#EE964B");//Height update
         }
     }
     while (p<=mid || q<=high){
         if(p<=mid){
-            // div_update(divs[p],div_sizes[p]*2, "#BCB57B");//Color update-Sandy brown
-            // div_update(divs[q],div_sizes[q]*2, "#BCB57B");//Color update
             arr[k++]=div_sizes[p++];
             div_update(divs[p-1],div_sizes[p-1]*2, "#EE964B");//Height update
         }
         else{
-            // div_update(divs[q],div_sizes[q]*2, "#BCB57B");//Color update
             arr[k++]=div_sizes[q++];
-            div_update(divs[q-1],div_sizes[q-1]*2, "#EE964B");//Height update
+            div_update(divs[q-1],div_sizes[q-1]*2, "#EE964B");//Height update  //orange-ish
         }
     }
     for(var i=low;i<k;i++){
         div_sizes[i]=arr[i];
-        div_update(divs[i],div_sizes[i]*2,"#F95738");
+        div_update(divs[i],div_sizes[i]*2,"#F95738"); //Tomato
     }
 }
+
+/*
+First division is made and we can see the mid points in sandy/grey color.
+Then the parts will be compared and each bar will turn orange in ascending order of its size.
+Finally the two parts will be merged and shown in red color.
+*/
