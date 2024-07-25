@@ -32,3 +32,6 @@ butts_algos[0].addEventListener('click', function() {
     bubble();
 });
 
+butts_algos[1].addEventListener('click', function(){
+    merge();
+});
