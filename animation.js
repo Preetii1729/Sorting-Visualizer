@@ -20,7 +20,7 @@ function animation_speed()
         case 5: speed=5000;
                 break;
     }
-    
+    c_delay=0;
     delay_time=10000/(Math.floor(array_size/10)*speed);        //Decrease numerator to increase speed.
 }
 
