@@ -40,4 +40,8 @@ butts_algos[1].addEventListener('click', function(){
 
 butts_algos[3].addEventListener('click', function() {
     SSort();
-})
+});
+
+butts_algos[4].addEventListener('click', function(){
+    ISort();
+});
