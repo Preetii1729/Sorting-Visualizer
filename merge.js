@@ -1,21 +1,21 @@
-function merge(){
+function MSort(){
     c_delay=0;
-    console.log("merge");
-    partition(0,array_size-1);   
+    console.log("merge1");
+    divide(0,array_size-1);   
 }
 
-function partition(i,j){
+function divide(i,j){
     if(i<j){
         var mid=Math.floor((i+j)/2);
         div_update(divs[mid],div_sizes[mid]*2, "#BCB57B");//Color update-Sandy brown
 
-        partition(i,mid);
-        partition(mid+1,j);
-        divide(i,j,mid);
+        divide(i,mid);
+        divide(mid+1,j);
+        merge(i,j,mid);
     }
 }
 
-function divide(low,high,mid){
+function merge(low,high,mid){
     var p= low, q=mid+1, k=low;
     var arr=[]; 
     while (p<=mid && q<=high){

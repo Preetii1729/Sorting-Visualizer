@@ -34,8 +34,7 @@ butts_algos[0].addEventListener('click', function() {
 });
 
 butts_algos[1].addEventListener('click', function(){
-    c_delay=0;
-    merge();
+    MSort();
 });
 
 butts_algos[3].addEventListener('click', function() {
