@@ -7,7 +7,7 @@ function QSort() {
 function partition(lb,ub){
     var pivot=lb;
     var i=lb,j=ub;
-    div_update(divs[pivot],div_sizes[pivot]*2,"#BCB57B"); //sage- brown yellow
+    div_update(divs[pivot],div_sizes[pivot]*2,"#BCB57B"); //sage-brown yellow
 
     while(i<j){
         while(div_sizes[pivot]>=div_sizes[i] && i<=ub){
@@ -69,3 +69,10 @@ function quick(lb, ub){
         div_update(divs[loc],div_sizes[loc]*2,"#F95738");     //tomato
     }
 }
+
+/*
+Sage-brown/yellow color is used to show pivot. 
+Sandy-brown/orange is used to traverse the elements.
+Blue elements are used to compare and swap.
+Red/tomato is used to show the final position of an element.
+*/
