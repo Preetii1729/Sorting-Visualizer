@@ -33,3 +33,9 @@ function bubble()
 
     // enable_buttons();
 }
+
+/*
+We traverse the array in orange color.
+Swapping of bars is done in gray-blue color.
+When the element is at the right position/sorted it is red/tomato color.
+*/
