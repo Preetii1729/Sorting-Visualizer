@@ -81,14 +81,14 @@ button:hover {
 }
 
 .time, .space {
-    width:12.5% ;
+    width:15% ;
     height: 100%;
 }
 
 
 #visualizer div{
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.15rem;
     text-align: center;
     color: #032B43;
 }
