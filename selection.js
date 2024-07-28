@@ -19,14 +19,18 @@ function selectionSort(n) {
         }
         div_update(divs[i],div_sizes[i]*2, "#49697F");
         div_update(divs[min],div_sizes[min]*2, "#49697F");//Color updat - gray blue
+
         var temp=div_sizes[min];
         div_sizes[min]=div_sizes[i];
         div_sizes[i]=temp;
+        
         div_update(divs[i],div_sizes[i]*2, "#49697F");
         div_update(divs[min],div_sizes[min]*2, "#49697F");//Color updat - gray blue
+        
         if(min!=i){
             div_update(divs[min],div_sizes[min]*2, "#EFC11A"); //original yellow
         }
+        
         div_update(divs[i],div_sizes[i]*2, "#F95738");//Color update - tomato
     }
     div_update(divs[0],div_sizes[0]*2, "#F95738");//Color update - tomato

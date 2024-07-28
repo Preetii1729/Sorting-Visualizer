@@ -12,11 +12,11 @@ function animation_speed()
                 break;
         case 2: speed=100;
                 break;
-        case 3: speed=400;
+        case 3: speed=1000;
                 break;
-        case 4: speed=800;
+        case 4: speed=5000;
                 break;
-        case 5: speed=3000;
+        case 5: speed=10000;
                 break;
     }
     c_delay=0;
