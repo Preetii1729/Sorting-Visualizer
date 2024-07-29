@@ -88,7 +88,7 @@ button:hover {
 }
 
 .time, .space {
-    height: 60%;
+    height: 70%;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -110,4 +110,20 @@ button:hover {
 
 .unseen {
     visibility: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+#spacecompx {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 900;
+    text-decoration: solid;
 }

@@ -13,6 +13,9 @@ var complexity=document.querySelectorAll(".complexity");
 var bestt=document.querySelector("#bestt");
 var worstt=document.querySelector("#worstt");
 var avgt=document.querySelector("#avgt");
+
+var spacecompx1= document.querySelector("#spacecompx");
+
 var spacec=document.querySelector("#spacec");
 
 generate_array();

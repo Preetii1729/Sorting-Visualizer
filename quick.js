@@ -1,6 +1,15 @@
 function QSort() {
     c_delay=0;
-    console.log("Bye2");
+
+    bestt.innerText=" O(nlogn)";
+    avgt.innerHTML=" O(nlogn)";
+    worstt.innerHTML=" O(n^2)";
+    
+    bests.innerHTML=" O(logn)";
+    avgs.innerHTML=" O(logn)";
+    worsts.innerHTML=" O(n)";
+    
+
     quick(0, array_size-1);
 }
 

@@ -1,10 +1,13 @@
 function MSort(){
     c_delay=0;
-    
+
     bestt.innerText=" O(nlogn)";
     avgt.innerHTML=" O(nlogn)";
     worstt.innerHTML=" O(nlogn)";
-    spacec.innerHTML=" O(n)";
+    
+    bests.innerHTML=" O(n)";
+    avgs.innerHTML=" O(n)";
+    worsts.innerHTML=" O(n)";
 
     divide(0,array_size-1);   
 }

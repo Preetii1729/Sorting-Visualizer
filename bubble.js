@@ -4,7 +4,10 @@ function BSort(){
     bestt.innerText=" O(n)";
     avgt.innerHTML=" O(n^2)";
     worstt.innerHTML=" O(n^2)";
-    spacec.innerHTML=" O(1)";
+
+    bests.innerHTML=" O(1)";
+    avgs.innerHTML=" O(1)";
+    worsts.innerHTML=" O(1)";
 
     bubble();
 }
