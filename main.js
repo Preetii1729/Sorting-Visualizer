@@ -8,6 +8,8 @@ var divs=[];
 var margin_size;
 var cont=document.getElementById("visualizer");
 
+var complexity=document.querySelectorAll(".complexity");
+
 generate_array();
 
 inp_gen.addEventListener("click", generate_array);
@@ -15,6 +17,8 @@ inp_as.addEventListener("input",generate_array);
 
 function generate_array()
 {
+    complexity[0].classList.add("unseen");
+    complexity[1].classList.add("unseen");
     array_size=inp_as.value;
     cont.innerHTML="";
     for(var i=0;i<array_size;i++)
@@ -34,22 +38,31 @@ function generate_array()
 }
 
 butts_algos[0].addEventListener('click', function() {
-    c_delay=0;
+    complexity[0].classList.remove("unseen");
+    complexity[1].classList.remove("unseen");
     BSort();
 });
 
 butts_algos[1].addEventListener('click', function(){
+    complexity[0].classList.remove("unseen");
+    complexity[1].classList.remove("unseen");
     MSort();
 });
 
 butts_algos[3].addEventListener('click', function() {
+    complexity[0].classList.remove("unseen");
+    complexity[1].classList.remove("unseen");
     SSort();
 });
 
 butts_algos[4].addEventListener('click', function(){
+    complexity[0].classList.remove("unseen");
+    complexity[1].classList.remove("unseen");
     ISort();
 });
 
 butts_algos[2].addEventListener('click',function(){
+    complexity[0].classList.remove("unseen");
+    complexity[1].classList.remove("unseen");
     QSort();
 });
