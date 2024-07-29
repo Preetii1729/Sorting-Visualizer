@@ -1,6 +1,11 @@
 function BSort(){
     c_delay=0;
 
+    bestt.innerText=" O(n)";
+    avgt.innerHTML=" O(n^2)";
+    worstt.innerHTML=" O(n^2)";
+    spacec.innerHTML=" O(1)";
+
     bubble();
 }
 
