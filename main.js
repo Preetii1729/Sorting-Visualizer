@@ -1,14 +1,19 @@
-var inp_gen=document.getElementById("arr_generate");
-var inp_as=document.getElementById('arr_size');
+var inp_gen=document.querySelector("#arr_generate");
+var inp_as=document.querySelector('#arr_size');
 var array_size=inp_as.value;
 
 var butts_algos=document.querySelectorAll(".sorts button");
 var div_sizes=[];
 var divs=[];
 var margin_size;
-var cont=document.getElementById("visualizer");
+var cont=document.querySelector("#visualizer");
 
 var complexity=document.querySelectorAll(".complexity");
+
+var bestt=document.querySelector("#bestt");
+var worstt=document.querySelector("worstt");
+var avgt=document.querySelector("#avgt");
+var spacec=document.querySelector("#spacec");
 
 generate_array();
 
