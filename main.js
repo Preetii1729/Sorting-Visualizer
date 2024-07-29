@@ -88,4 +88,10 @@ butts_d_algos[1].addEventListener('click', function(){
     MSortd();
 });
 
+butts_d_algos[2].addEventListener('click', function() {
+    complexity[0].classList.remove("unseen");
+    complexity[1].classList.remove("unseen");
+    QSortd();
+});
+
 
