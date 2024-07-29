@@ -1,6 +1,11 @@
 function MSort(){
     c_delay=0;
-    console.log("merge1");
+    
+    bestt.innerText=" O(nlogn)";
+    avgt.innerHTML=" O(nlogn)";
+    worstt.innerHTML=" O(nlogn)";
+    spacec.innerHTML=" O(n)";
+
     divide(0,array_size-1);   
 }
 

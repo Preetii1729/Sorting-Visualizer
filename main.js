@@ -11,7 +11,7 @@ var cont=document.querySelector("#visualizer");
 var complexity=document.querySelectorAll(".complexity");
 
 var bestt=document.querySelector("#bestt");
-var worstt=document.querySelector("worstt");
+var worstt=document.querySelector("#worstt");
 var avgt=document.querySelector("#avgt");
 var spacec=document.querySelector("#spacec");
 
@@ -32,7 +32,7 @@ function generate_array()
         divs[i]=document.createElement("div");
         cont.appendChild(divs[i]);
         margin_size=0.1;
-        if(array_size>60){
+        if(array_size>40){
             divs[i].style=" margin:0% " + margin_size + "%; background-color:#EFC11A; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i])*2 + "%; font-size: 0.65rem";
         }
         else{

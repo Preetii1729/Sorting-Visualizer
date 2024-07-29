@@ -88,12 +88,12 @@ button:hover {
 }
 
 .time, .space {
-    /* width:15% ; */
     height: 60%;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    text-align: center;
 }
 
 .complexity {
@@ -101,7 +101,11 @@ button:hover {
     height: 100%;
     display: flex;
     align-items: center;
-    padding:0 2vw 0 2vw;
+    padding:0 2%;
+}
+
+#bestt, #worstt, #avgt, #spacec {
+    text-align: center;
 }
 
 .unseen {
