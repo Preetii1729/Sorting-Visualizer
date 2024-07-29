@@ -2,7 +2,8 @@ var inp_gen=document.querySelector("#arr_generate");
 var inp_as=document.querySelector('#arr_size');
 var array_size=inp_as.value;
 
-var butts_algos=document.querySelectorAll(".sorts button");
+var butts_algos=document.querySelectorAll(".asce button");
+var butts_d_algos=document.querySelectorAll(".desc button");
 var div_sizes=[];
 var divs=[];
 var margin_size;
@@ -14,9 +15,9 @@ var bestt=document.querySelector("#bestt");
 var worstt=document.querySelector("#worstt");
 var avgt=document.querySelector("#avgt");
 
-var spacecompx1= document.querySelector("#spacecompx");
-
-var spacec=document.querySelector("#spacec");
+var bests=document.querySelector("#bests");        //best space
+var avgs=document.querySelector("#avgs");          //avg space
+var worsts=document.querySelector("#worsts");        //worst space
 
 generate_array();
 
@@ -57,6 +58,12 @@ butts_algos[1].addEventListener('click', function(){
     MSort();
 });
 
+butts_algos[2].addEventListener('click',function(){
+    complexity[0].classList.remove("unseen");
+    complexity[1].classList.remove("unseen");
+    QSort();
+});
+
 butts_algos[3].addEventListener('click', function() {
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
@@ -69,8 +76,10 @@ butts_algos[4].addEventListener('click', function(){
     ISort();
 });
 
-butts_algos[2].addEventListener('click',function(){
+butts_d_algos[0].addEventListener('click', function(){
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
-    QSort();
+    BSortd();
 });
+
+
