@@ -41,14 +41,25 @@
 }
 
 .sorts {
-    padding: 0.5rem 3.5rem 0 3.5rem;
+    padding: 0 3.5rem 0.2rem 3.5rem;
     display: flex;
-    justify-content: space-evenly;
-    width: 55%;
-    gap: 3rem;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 80%;
+    /* gap: 3rem; */
 }
 
-.sorts button {
+.asce button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    border: 0px;
+}
+
+
+.desc button {
     font-size: 1rem;
     padding: 0.5rem;
     background-color: transparent;
