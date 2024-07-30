@@ -9,7 +9,7 @@ function MSort(){
     avgs.innerHTML=" O(n)";
     worsts.innerHTML=" O(n)";
 
-    divide(0,array_size-1);   
+    divide(0,a_size-1);   
 }
 
 function divide(i,j){

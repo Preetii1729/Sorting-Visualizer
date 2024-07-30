@@ -9,7 +9,7 @@ function QSortd(){
     avgs.innerHTML=" O(logn)";
     worsts.innerHTML=" O(n)";
     
-    quickd(0, array_size-1);
+    quickd(0, a_size-1);
 }
 
 function quickd(lb, ub) {

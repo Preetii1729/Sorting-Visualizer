@@ -29,12 +29,12 @@ var c_delay=0;          //Updated on every div change so that we can see the vis
 function div_update(cont,height,color)
 {
         window.setTimeout(function(){
-                if(array_size>40){
-                        cont.style=" margin:0% " + margin_size + "%; width:" + (100/array_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + "; font-size: 0.75rem";
+                if(a_size>40){
+                        cont.style=" margin:0% " + margin_size + "%; width:" + (100/a_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + "; font-size: 0.75rem";
                         cont.innerHTML="<p>"+height/2+"</p>";
                 }
                 else{
-                        cont.style=" margin:0% " + margin_size + "%; width:" + (100/array_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
+                        cont.style=" margin:0% " + margin_size + "%; width:" + (100/a_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
                         cont.innerHTML="<p>"+height/2+"</p>";
                 }
 

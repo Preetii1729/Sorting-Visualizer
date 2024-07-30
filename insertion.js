@@ -13,7 +13,7 @@ function ISort(){
 }
 
 function insertion() {
-    var n=array_size;
+    var n=a_size;
     for(var i=1; i<n ;i++){
         div_update(divs[i],div_sizes[i]*2,"#BCB57B"); //sage- brown yellow
 

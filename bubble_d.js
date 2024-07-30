@@ -13,8 +13,8 @@ function BSortd(){
 }
 
 function bubbleD(){
-    for (var i = 0; i < array_size - 1; i++) {
-        for (var j = 0; j < array_size - i - 1; j++) {
+    for (var i = 0; i < a_size - 1; i++) {
+        for (var j = 0; j < a_size - i - 1; j++) {
 
             div_update(divs[j],div_sizes[j]*2, "#EE964B");      //Sandy brown
 

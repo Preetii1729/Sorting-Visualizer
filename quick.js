@@ -10,7 +10,7 @@ function QSort() {
     worsts.innerHTML=" O(n)";
     
 
-    quick(0, array_size-1);
+    quick(0, a_size-1);
 }
 
 function partition(lb,ub){

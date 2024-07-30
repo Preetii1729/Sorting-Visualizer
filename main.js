@@ -1,6 +1,6 @@
-var inp_gen=document.querySelector("#arr_generate");
-var inp_as=document.querySelector('#arr_size');
-var array_size=inp_as.value;
+var arr_gen=document.querySelector("#arr_generate");
+var arr_size=document.querySelector('#arr_size');
+var a_size=arr_size.value;
 
 var butts_algos=document.querySelectorAll(".asce button");
 var butts_d_algos=document.querySelectorAll(".desc button");
@@ -21,26 +21,26 @@ var worsts=document.querySelector("#worsts");        //worst space
 
 generate_array();
 
-inp_gen.addEventListener("click", generate_array);
-inp_as.addEventListener("input",generate_array);
+arr_gen.addEventListener("click", generate_array);
+arr_size.addEventListener("input",generate_array);
 
 function generate_array()
 {
     complexity[0].classList.add("unseen");
     complexity[1].classList.add("unseen");
-    array_size=inp_as.value;
+    a_size=arr_size.value;
     cont.innerHTML="";
-    for(var i=0;i<array_size;i++)
+    for(var i=0;i<a_size;i++)
     {
-        div_sizes[i]=Math.floor(Math.random() *0.5*(inp_as.max - inp_as.min) ) + 10;
+        div_sizes[i]=Math.floor(Math.random() *0.5*(arr_size.max - arr_size.min) ) + 10;
         divs[i]=document.createElement("div");
         cont.appendChild(divs[i]);
         margin_size=0.1;
-        if(array_size>40){
-            divs[i].style=" margin:0% " + margin_size + "%; background-color:#EFC11A; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i])*2 + "%; font-size: 0.65rem";
+        if(a_size>40){
+            divs[i].style=" margin:0% " + margin_size + "%; background-color:#EFC11A; width:" + (100/a_size-(2*margin_size)) + "%; height:" + (div_sizes[i])*2 + "%; font-size: 0.65rem";
         }
         else{
-            divs[i].style=" margin:0% " + margin_size + "%; background-color:#EFC11A; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i])*2 + "%;";
+            divs[i].style=" margin:0% " + margin_size + "%; background-color:#EFC11A; width:" + (100/a_size-(2*margin_size)) + "%; height:" + (div_sizes[i])*2 + "%;";
         }
         divs[i].innerHTML="<p>"+div_sizes[i]+"</p>";
     }

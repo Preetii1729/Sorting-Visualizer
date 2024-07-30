@@ -9,7 +9,7 @@ function SSort(){
     avgs.innerHTML=" O(1)";
     worsts.innerHTML=" O(1)";
 
-    selectionSort(array_size);
+    selectionSort(a_size);
 }
 
 function selectionSort(n) {
