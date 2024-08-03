@@ -17,7 +17,6 @@ function quickd(lb, ub) {
         var loc1 = partition2(lb, ub);
         quickd(lb, loc1 - 1);
         quickd(loc1 + 1, ub);
-        // div_update(divs[loc1],div_sizes[loc1]*2,"#F95738");     //tomato
     }
 }
 
