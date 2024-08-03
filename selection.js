@@ -41,7 +41,7 @@ function selectionSort(n) {
         
         div_update(divs[i],div_sizes[i]*2, "#F95738");//Color update - tomato
     }
-    div_update(divs[0],div_sizes[0]*2, "#F95738");//Color update - tomato
+    // div_update(divs[0],div_sizes[0]*2, "#F95738");//Color update - tomato
 }
 
 /*
