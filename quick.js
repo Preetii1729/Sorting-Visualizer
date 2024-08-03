@@ -75,7 +75,7 @@ function quick(lb, ub){
         var loc=partition(lb,ub);
         quick(lb,loc-1);
         quick(loc+1,ub);
-        div_update(divs[loc],div_sizes[loc]*2,"#F95738");     //tomato
+        // div_update(divs[loc],div_sizes[loc]*2,"#F95738");     //tomato
     }
 }
 

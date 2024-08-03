@@ -13,10 +13,11 @@ function QSortd(){
 }
 
 function quickd(lb, ub) {
-    if (lb < ub) {
-        var loc = partition2(lb, ub);
-        quickd(lb, loc - 1);
-        quickd(loc + 1, ub);
+    if (lb <= ub) {
+        var loc1 = partition2(lb, ub);
+        quickd(lb, loc1 - 1);
+        quickd(loc1 + 1, ub);
+        // div_update(divs[loc1],div_sizes[loc1]*2,"#F95738");     //tomato
     }
 }
 
@@ -26,7 +27,7 @@ function partition2(lb,ub){
     div_update(divs[pivot],div_sizes[pivot]*2,"#BCB57B"); //sage-brown yellow
 
     while(i<j){
-        while(div_sizes[pivot]<=div_sizes[i] && i<=ub){
+        while(div_sizes[pivot] <= div_sizes[i] && i<=ub){
             if(i==lb){
                 i++;
                 continue;
@@ -37,16 +38,17 @@ function partition2(lb,ub){
         }
         
         if(i<=ub){
-            div_update(divs[i],div_sizes[i]*2,"#EE964B"); 
+            div_update(divs[i],div_sizes[i]*2,"#EE964B");     //Sandy brown
             div_update(divs[i],div_sizes[i]*2,"#49697F");     //gray-blue
         }
         
-        while(div_sizes[pivot]>div_sizes[j] && j>=lb){
+        while(div_sizes[pivot]>div_sizes[j] && j>lb){
             div_update(divs[j],div_sizes[j]*2,"#EE964B");   //Sandy brown
             div_update(divs[j],div_sizes[j]*2,"#FFC60B");     //og yellow
             j--;
         }
-        div_update(divs[j],div_sizes[j]*2,"#EE964B");
+
+        div_update(divs[j],div_sizes[j]*2,"#EE964B");       //Sandy brown
         div_update(divs[j],div_sizes[j]*2,"#49697F");       //gray-blue
 
         if(i<j){
