@@ -50,3 +50,10 @@ function insertion() {
     div_update(divs[n-1],div_sizes[n-1]*2, "#F95738"); //tomato
     
 }
+
+/*
+Traversing: Sandy-brown/orange
+Final update where the number is going to come: blue
+The demarcation: sage- brown/ yellow
+Final after every round: red
+*/
