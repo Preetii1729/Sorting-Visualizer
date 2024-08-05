@@ -100,4 +100,9 @@ butts_d_algos[3].addEventListener('click', function() {
     SSortd();
 });
 
+butts_d_algos[4].addEventListener('click', function() {
+    complexity[0].classList.remove("unseen");
+    complexity[1].classList.remove("unseen");
+    ISortd();
+});
 
