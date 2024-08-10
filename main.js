@@ -49,60 +49,81 @@ function generate_array()
 butts_algos[0].addEventListener('click', function() {
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
+    disable_buttons();
     BSort();
 });
 
 butts_algos[1].addEventListener('click', function(){
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
+    disable_buttons();
     MSort();
 });
 
 butts_algos[2].addEventListener('click',function(){
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
+    disable_buttons();
     QSort();
 });
 
 butts_algos[3].addEventListener('click', function() {
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
+    disable_buttons();
     SSort();
 });
 
 butts_algos[4].addEventListener('click', function(){
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
+    disable_buttons();
     ISort();
 });
 
 butts_d_algos[0].addEventListener('click', function(){
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
+    disable_buttons();
     BSortd();
 });
 
 butts_d_algos[1].addEventListener('click', function(){
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
+    disable_buttons();
     MSortd();
 });
 
 butts_d_algos[2].addEventListener('click', function() {
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
+    disable_buttons();
     QSortd();
 });
 
 butts_d_algos[3].addEventListener('click', function() {
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
+    disable_buttons();
     SSortd();
 });
 
 butts_d_algos[4].addEventListener('click', function() {
     complexity[0].classList.remove("unseen");
     complexity[1].classList.remove("unseen");
+    disable_buttons();
     ISortd();
 });
+
+function disable_buttons()
+{
+    for(var i=0;i<butts_algos.length;i++)
+    {
+        butts_algos[i].disabled=true;
+        butts_d_algos[i].disabled=true;
+        arr_size.disabled=true;
+        inp_speed.disabled=true;
+    }
+}
 
