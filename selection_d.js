@@ -10,6 +10,7 @@ function SSortd(){
     worsts.innerHTML=" O(1)";
 
     selectionSortd(a_size);
+    enable_buttons();
 }
 
 function selectionSortd(n) {

@@ -10,6 +10,7 @@ function BSortd(){
     worsts.innerHTML=" O(1)";
 
     bubbleD();
+    enable_buttons();
 }
 
 function bubbleD(){

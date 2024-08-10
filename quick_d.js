@@ -10,6 +10,7 @@ function QSortd(){
     worsts.innerHTML=" O(n)";
     
     quickd(0, a_size-1);
+    enable_buttons();
 }
 
 function quickd(lb, ub) {

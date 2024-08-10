@@ -10,6 +10,7 @@ function ISortd(){
     worsts.innerHTML=" O(1)";
 
     insertion_d();
+    enable_buttons();
 }
 
 function insertion_d(){

@@ -29,6 +29,7 @@ function generate_array()
     complexity[0].classList.add("unseen");
     complexity[1].classList.add("unseen");
     a_size=arr_size.value;
+
     cont.innerHTML="";
     for(var i=0;i<a_size;i++)
     {
@@ -44,6 +45,10 @@ function generate_array()
         }
         divs[i].innerHTML="<p>"+div_sizes[i]+"</p>";
     }
+
+    
+    
+    
 }
 
 butts_algos[0].addEventListener('click', function() {
@@ -124,6 +129,21 @@ function disable_buttons()
         butts_d_algos[i].disabled=true;
         arr_size.disabled=true;
         inp_speed.disabled=true;
+        arr_gen.disabled=true;
     }
+}
+
+function enable_buttons()
+{
+    window.setTimeout(function(){
+        for(var i=0;i<butts_algos.length;i++)
+        {
+            butts_algos[i].disabled=false;
+            butts_d_algos[i].disabled=false;
+            arr_size.disabled=false;
+            inp_speed.disabled=false;
+            arr_gen.disabled=false;
+        }
+    },c_delay+=delay_time);
 }
 

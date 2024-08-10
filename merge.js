@@ -10,6 +10,7 @@ function MSort(){
     worsts.innerHTML=" O(n)";
 
     divide(0,a_size-1);   
+    enable_buttons();
 }
 
 function divide(i,j){

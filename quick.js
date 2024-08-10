@@ -11,6 +11,7 @@ function QSort() {
     
 
     quick(0, a_size-1);
+    enable_buttons();
 }
 
 function partition(lb,ub){
