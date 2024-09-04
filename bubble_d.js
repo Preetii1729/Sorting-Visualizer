@@ -15,8 +15,9 @@ function BSortd(){
 
 function bubbleD(){
     for (var i = 0; i < a_size - 1; i++) {
+        let swaps = 0;
         for (var j = 0; j < a_size - i - 1; j++) {
-
+            
             div_update(divs[j],div_sizes[j]*2, "#EE964B");      //Sandy brown
 
             if (div_sizes[j] < div_sizes[j + 1]) {      // Changed comparison operator
@@ -30,12 +31,17 @@ function bubbleD(){
 
                 div_update(divs[j],div_sizes[j]*2, "#49697F");      //gray-blue
                 div_update(divs[j+1],div_sizes[j+1]*2, "#49697F");  //gray-blue
-
+                swaps++;
             }
-
+            
             div_update(divs[j],div_sizes[j]*2, "#EFC11A");          //og yellow
         }
         div_update(divs[j],div_sizes[j]*2, "#F95738");      //tomato
+        if(swaps==0){
+            for (var j = 0; j < a_size - i - 1; j++)
+                div_update(divs[j],div_sizes[j]*2, "#F95738");      //tomato
+            break;
+        }
     }
     div_update(divs[0],div_sizes[0]*2, "#F95738");          //tomato
 }
